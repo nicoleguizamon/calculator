@@ -4,7 +4,7 @@
 Index.prototype = {
     bindEvents: function () {
         $('#btnCalculate').on('click', $.proxy(this.calculateClick, this));
-        
+        $("#form-calculator").validate();
     },
     calculateClick: function (e) {
         e.preventDefault();
